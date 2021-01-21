@@ -61,8 +61,12 @@ function calcRefri(){
     }
 
     let qtde = refri * qtdAdultos.value + refri / 2 * qtdCriancas.value;
-    
-    linha.innerText = `${Math.ceil(qtde / 2000)} garrafas de refrigerante.`;
+    let un = 'garrafa';
+    if(qtde > 2000){
+        un = 'garrafas';
+    }
+
+    linha.innerText = `${Math.ceil(qtde / 2000)} ${un} de refrigerante.`;
 
     return print.appendChild(linha);
 }
