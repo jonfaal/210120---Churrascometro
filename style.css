@@ -1,5 +1,10 @@
 @charset "UTF8";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+
 :root {
     --text01: #ff9640;
     --text02: #cc5200;
@@ -8,7 +13,9 @@
     --gradientB01: #494b55;
     --gradientB02: #353535;
     --shadow01: rgba(250, 92, 0, 0.452);
-    --hilight: rgba(250, 92, 0, 0.452);
+    --shadow02: rgba(0, 0, 0, 0.3);
+    --highlight01: rgba(250, 92, 0, 0.452);
+    --highlight02: rgba(255, 205, 148, 0.2);
 
     --corA: #1E4585;
     --corB: #1e9dad;
@@ -33,7 +40,8 @@ body{
     height: 100vh;
     background-image: linear-gradient(120deg,var(--gradientA01), var(--gradientA02));
 
-    font-family: helvetica;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 #container{
@@ -46,7 +54,7 @@ body{
     text-align: center;
     background-image: linear-gradient(120deg,var(--gradientB01), var(--gradientB02));
     box-shadow: 5px 5px 20px var(--shadow01),
-    -5px -5px 20px var(--hilight);
+    -5px -5px 20px var(--highlight01);
 }
 
 .header{
@@ -68,11 +76,12 @@ span{
 }
 
 h1{
+    font-family: 'Lobster', cursive;
+
     display: inline;
-    font-size: 4vmin;
+    font-size: 6vmin;
     padding-top: 30px;
     padding-bottom: 0;
-    text-transform: uppercase;
     background: -webkit-linear-gradient(var(--text01), var(--text02));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -114,13 +123,13 @@ h3{
 }
 
 .div-in{
-    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2) inset,
-    -2px -2px 2px 0 rgb(255, 255, 255, 0.5) inset;
+    box-shadow: 2px 2px 2px var(--shadow02) inset,
+    -2px -2px 2px var(--highlight02) inset;
 }
 
 .div-out{
-    box-shadow: -2px -2px 2px 0 rgba(0, 0, 0, 0.2) inset,
-    2px 2px 2px 0 rgb(255, 255, 255, 0.5) inset;
+    box-shadow: -2px -2px 2px var(--shadow02) inset,
+    2px 2px 2px var(--highlight02) inset;
 }
 
 input{
@@ -143,8 +152,8 @@ input{
     height: 5vmin;
     border-radius: 50%;
     position: absolute;
-    box-shadow: -2px -2px 2px 0 rgba(0, 0, 0, 0.2) inset,
-    2px 2px 2px 0 rgb(255, 255, 255, 0.5) inset;
+    box-shadow: -2px -2px 2px var(--shadow02) inset,
+    2px 2px 2px var(--highlight02) inset;
 }
 
 .btn-txt{
@@ -160,8 +169,8 @@ input{
 
 .btn-stl:active, .btn-calc:active{
 
-    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2) inset,
-    -2px -2px 2px 0 rgb(255, 255, 255, 0.5) inset;
+    box-shadow: 2px 2px 2px var(--shadow02) inset,
+    -2px -2px 2px var(--highlight02) inset;
 }
 
 .btn-add{
@@ -175,7 +184,8 @@ input{
 }
 
 .btn-install{
-    margin: 5px 5px 5px 5px;
+    margin: 20px 5px 5px 10px;
+    padding: 0%;
     width: 3vmin;
     height: 3vmin;
     background-color: transparent;
@@ -187,8 +197,8 @@ input{
     padding: 10px;
     border: none;
 
-    box-shadow: -2px -2px 2px 0 rgba(0, 0, 0, 0.2) inset,
-    2px 2px 2px 0 rgb(255, 255, 255, 0.5) inset;
+    box-shadow: -2px -2px 2px var(--shadow02) inset,
+    2px 2px 2px var(--highlight02) inset;
 }
 
 #print{
@@ -217,7 +227,7 @@ p{
 }
 
 h1{
-    font-size: 7vmin;
+    font-size: 10vmin;
     padding: 10% 0% 0% 0%;
 }
 
@@ -252,7 +262,7 @@ input{
 }
 
 .btn-install{
-    margin: 5px 5px 5px 5px;
+    margin: 20px 5px 5px 15px;
     padding: 0%;
     width: 5vmin;
     height: 5vmin;
