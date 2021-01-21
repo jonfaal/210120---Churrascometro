@@ -41,7 +41,7 @@ body{
     margin-top: 10%;
     border-radius: 30px;
     padding-bottom: 1px;
-    width: 50vw;
+    width: 50vmin;
     display: block;
     text-align: center;
     background-image: linear-gradient(120deg,var(--gradientB01), var(--gradientB02));
@@ -57,7 +57,7 @@ body{
 p{  
     color: var(--text01);
     text-align: left;
-    font-size: 1.8vw;
+    font-size: 1.8vmin;
     font-weight: 100;
     text-transform: uppercase;
     padding: 10px 0px 0px 10px;
@@ -69,7 +69,7 @@ span{
 
 h1{
     display: inline;
-    font-size: 4vw;
+    font-size: 4vmin;
     padding-top: 30px;
     padding-bottom: 0;
     text-transform: uppercase;
@@ -80,7 +80,7 @@ h1{
 
 h2{  
     color: var(--text01);
-    font-size: 2.5vw;
+    font-size: 2.5vmin;
     font-weight: 600;
     text-transform: uppercase;
     margin: 10px 0px 20px 0px;
@@ -90,7 +90,7 @@ h2{
 
 h3{  
     color: var(--text01);
-    font-size: 2vw;
+    font-size: 2vmin;
     font-weight: 300;
     text-transform: uppercase;
     margin: 0px 0px 0px 0px;
@@ -110,7 +110,7 @@ h3{
     border-radius: 30px;
     margin: 10px;
     position:relative;
-    height: 6vw;
+    height: 6vmin;
 }
 
 .div-in{
@@ -129,18 +129,18 @@ input{
     appearance: none;
     color: var(--text02);
     text-align: center;
-    font-size: 3vw;
+    font-size: 3vmin;
     text-transform: uppercase;
-    margin-top: 1.2vw;
-    width: 15vw;
+    margin-top: 1.2vmin;
+    width: 15vmin;
 }
 
 .btn-stl{
-    margin-top: .5vw;
+    margin-top: .5vmin;
     background-color: rgba(255, 238, 217, 0.164);
     border: none;
-    width: 5vw;
-    height: 5vw;
+    width: 5vmin;
+    height: 5vmin;
     border-radius: 50%;
     position: absolute;
     box-shadow: -2px -2px 2px 0 rgba(0, 0, 0, 0.2) inset,
@@ -150,7 +150,7 @@ input{
 .btn-txt{
     color: var(--text01);
     font-weight: 100;
-    font-size: 2.5vw;
+    font-size: 2.5vmin;
     text-transform: uppercase;
 }
 
@@ -176,8 +176,8 @@ input{
 
 .btn-install{
     margin: 5px 5px 5px 5px;
-    width: 3vw;
-    height: 3vw;
+    width: 3vmin;
+    height: 3vmin;
     background-color: transparent;
 }
 
@@ -201,61 +201,64 @@ input{
 }
 
 .ico-down{
-    width: 4vw;
+    width: 2vmin;
 }
 
 @media screen and (max-width:650px){
 
 #container{
-    width: 90vw;
+    width: 90vmin;
     
 }
 
 p{  
-    font-size: 3vw;
+    font-size: 3vmin;
     font-weight: 400;
 }
 
 h1{
-    font-size: 7vw;
+    font-size: 7vmin;
     padding: 10% 0% 0% 0%;
 }
 
 h2{  
-    font-size: 5vw;
+    font-size: 5vmin;
 }
 
 h3{  
-    font-size: 4vw;
+    font-size: 4vmin;
     font-weight: 500;
 }
 
 .div-input{
-    height: 10vw;
+    height: 10vmin;
 }
 
 
 
 input{
-    font-size: 6vw;
-    margin-top: 1.2vw;
+    font-size: 6vmin;
+    margin-top: 1.2vmin;
 }
 
 .btn-stl{
-    margin-top: .8vw;
-    width: 8vw;
-    height: 8vw;
+    margin-top: .8vmin;
+    width: 8vmin;
+    height: 8vmin;
 }
 
 .btn-txt{
-    font-size: 5vw;
+    font-size: 5vmin;
 }
 
 .btn-install{
     margin: 5px 5px 5px 5px;
     padding: 0%;
-    width: 5vw;
-    height: 5vw;
+    width: 5vmin;
+    height: 5vmin;
 }
 
+.ico-down{
+    width: 4vmin;
+}
 }
