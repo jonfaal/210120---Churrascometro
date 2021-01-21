@@ -1,0 +1,15 @@
+{
+    "background_color": "#1a1a1a",
+    "description": "Projeto de calculadora de estimativa de insumos para churrasco. ",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "./images/favicon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "name": "Churracômetro",
+    "short_name": "Churras",
+    "start_url": "./index.html"
+  }
