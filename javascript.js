@@ -68,12 +68,13 @@ function calcRefri(){
 }
 
 function calcula(){
+    print.style.display = "inline-block";
 
     if(qtdAdultos.value < 1){
         print.innerHTML = '<h2>Defina a quantidade<br> de pessoas!<h2>'
 
     } else{
-        print.innerHTML = '<h2>Você vai precisar de:<h2>'
+        print.innerHTML = '<h2>Você vai precisar de:<h2>';
         calcCarne();
         calcCerveja();
         calcRefri();
