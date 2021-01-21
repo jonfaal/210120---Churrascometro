@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Churrascômetro</title>
+</head>
+
+<body>
+    
+    <div id="container">
+
+        <h1>Churrascômetro</h1>
+        <div class="div-out div-ext">
+            <div>
+                <p>Quantidade de adultos:</p>
+                <div class="div-in div-input">
+                    <input type="number" id="qtd-adt" value="0" disabled required>
+                    <button class="btn-sub btn-stl btn-txt" id="sub-adt" onclick="sub(qtdAdultos)">-</button>
+                    <button class="btn-add btn-stl btn-txt" id="add-adt" onclick="add(qtdAdultos)">+</button>
+                </div>
+            </div>
+            <div>
+                <P>Quantidade de crianças:</p>
+                <div class="div-in div-input">
+                    <input type="number" id="qtd-cri" value="0" disabled>
+                    <button class="btn-sub btn-stl btn-txt" id="add-cri" onclick="sub(qtdCriancas)">-</button>
+                    <button class="btn-add btn-stl btn-txt" id="add-cri" onclick="add(qtdCriancas)">+</button>
+                </div>
+            </div>
+            <div>
+                <p>Duração do churrasco (horas):</p>
+                <div class="div-in div-input">
+                    <input type="number" id="qtd-tmp" value="0" disabled>
+                    <button class="btn-sub btn-stl btn-txt" id="add-tmp" onclick="sub(qtdTempo)">-</button>
+                    <button class="btn-add btn-stl btn-txt" id="add-tmp" onclick="add(qtdTempo)">+</button>
+                </div>
+            </div>
+            <div>
+                <button class="btn-calc btn-txt" id="calc" onclick="calcula()">Calcular</button>
+            </div>
+            <div id="print">
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="./javascript.js"></script>
+
+
+</html>

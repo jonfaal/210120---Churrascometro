@@ -1,0 +1,225 @@
+@charset "UTF8";
+
+:root {
+    --text01: #ff9640;
+    --text02: #cc5200;
+    --gradientA01: #3b3333;
+    --gradientA02: #1a1a1a;
+    --gradientB01: #494b55;
+    --gradientB02: #353535;
+    --shadow01: rgba(250, 92, 0, 0.452);
+    --hilight: rgba(250, 92, 0, 0.452);
+
+    --corA: #1E4585;
+    --corB: #1e9dad;
+    --corC: #4c4e50;
+    --corD: #515756;
+    --corE: #4c7d96;
+    --corF: #5274ac;
+}
+
+/* :root {
+    --corA: #1E4585;
+    --corB: #5982B0;
+    --corC: #B8CADE;
+    --corD: #D8E4E2;
+    --corE: #B2B8BB;
+    --corF: #5274ac;
+} */
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(120deg,var(--gradientA01), var(--gradientA02));
+
+    font-family: helvetica;
+}
+
+#container{
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 30px;
+    padding-bottom: 1px;
+    width: 50vw;
+    display: block;
+    text-align: center;
+    background-image: linear-gradient(120deg,var(--gradientB01), var(--gradientB02));
+    box-shadow: 5px 5px 20px var(--shadow01),
+    -5px -5px 20px var(--hilight);
+}
+
+p{  
+    color: var(--text01);
+    text-align: left;
+    font-size: 1.8vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 10px 0px 0px 10px;
+}
+
+span{
+    text-transform: none;
+}
+
+h1{
+    font-size: 4vw;
+    padding: 30px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(var(--text01), var(--text02));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2{  
+    color: var(--text01);
+    font-size: 2.5vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 30px 0px -10px 0px;
+    padding: 0px 0px 0px 00px;
+}
+
+h3{  
+    color: var(--text01);
+    font-size: 2vw;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 10px 00px;
+}
+
+.div-ext{
+    background-color: transparent;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.div-input{
+    background-color: transparent;
+    border-radius: 30px;
+    margin: 10px;
+    position:relative;
+    height: 6vw;
+}
+
+.div-in{
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2) inset,
+    -2px -2px 2px 0 rgb(255, 255, 255, 0.5) inset;
+}
+
+.div-out{
+    box-shadow: -2px -2px 2px 0 rgba(0, 0, 0, 0.2) inset,
+    2px 2px 2px 0 rgb(255, 255, 255, 0.5) inset;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    appearance: none;
+    color: var(--text02);
+    text-align: center;
+    font-size: 3vw;
+    text-transform: uppercase;
+    margin-top: 1.2vw;
+    width: 15vw;
+}
+
+.btn-stl{
+    margin-top: .5vw;
+    background-color: rgba(255, 238, 217, 0.164);
+    border: none;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: -2px -2px 2px 0 rgba(0, 0, 0, 0.2) inset,
+    2px 2px 2px 0 rgb(255, 255, 255, 0.5) inset;
+}
+
+.btn-txt{
+    color: var(--text01);
+    font-weight: 100;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+}
+
+.btn-stl:focus, .btn-calc:focus{
+    outline:0;
+}
+
+.btn-stl:active, .btn-calc:active{
+
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2) inset,
+    -2px -2px 2px 0 rgb(255, 255, 255, 0.5) inset;
+}
+
+.btn-add{
+    right: 2%;
+    vertical-align:middle
+}
+
+.btn-sub{
+    position: absolute;
+    right: 15%;
+}
+
+.btn-calc{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+
+    box-shadow: -2px -2px 2px 0 rgba(0, 0, 0, 0.2) inset,
+    2px 2px 2px 0 rgb(255, 255, 255, 0.5) inset;
+}
+
+@media screen and (max-width:650px){
+
+#container{
+    width: 90vw;
+    
+}
+
+p{  
+    font-size: 3vw;
+}
+
+h1{
+    font-size: 8vw;
+    padding: 10% 0% 0% 0%;
+}
+
+h2{  
+    font-size: 5vw;
+}
+
+h3{  
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+.div-input{
+    height: 10vw;
+}
+
+
+
+input{
+    font-size: 6vw;
+    margin-top: 1.2vw;
+}
+
+.btn-stl{
+    margin-top: .8vw;
+    width: 8vw;
+    height: 8vw;
+}
+
+.btn-txt{
+    font-size: 5vw;
+}
+
+}
