@@ -41,7 +41,16 @@ body{
     background-image: linear-gradient(120deg,var(--gradientA01), var(--gradientA02));
 
     font-family: 'Open Sans', sans-serif;
+    
+}
 
+.tag, a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #5982B0;
+    font-size: 12px;
+    margin-top: 5vmin;
+    text-decoration: none;
+    text-align: center;
 }
 
 #container{
